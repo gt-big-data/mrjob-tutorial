@@ -15,4 +15,5 @@ You should see an output along the lines of:
 </code></pre>
 ## Analyzing Sentiment with MapReduce
 Open a new python document and name it ```sentiments.py```
+
 Follow live demo
