@@ -7,7 +7,7 @@ git clone https://github.com/gt-big-data/mrjob-tutorial
 ## Basic MapReduce job
 Open wordcount.py in /path/to/mrjob-tutorial and look it over
 In command window, run: 
-<pre><code>```python wordcount.py sample.txt```</code></pre>
+<pre><code>python wordcount.py sample.txt</code></pre>
 You should see an output along the lines of:
 <pre><code>"chars" 10477
 "lines" 170
