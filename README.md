@@ -13,3 +13,6 @@ You should see an output along the lines of:
 "lines" 170
 "words" 1619
 </code></pre>
+## Analyzing Sentiment with MapReduce
+Open a new python document and name it ```sentiments.py```
+Follow live demo
