@@ -2,23 +2,18 @@
 Run MapReduce jobs locally and on the cloud
 ## Installation
 <pre><code>pip install mrjob
+git clone https://github.com/gt-big-data/mrjob-tutorial
 </code></pre>
 ## Basic MapReduce job
-Open a new python file and name it wordcount.py
-<pre><code>from mrjob.job import MRJob
-
-
-class MRWordFrequencyCount(MRJob):
-
-    def mapper(self, _, line):
-        yield "chars", len(line)
-        yield "words", len(line.split())
-        yield "lines", 1
-
-    def reducer(self, key, values):
-        yield key, sum(values)
-
-
-if __name__ == '__main__':
-    MRWordFrequencyCount.run()
+Open wordcount.py in /path/to/mrjob-tutorial and look it over
+In command window, run: 
+<pre><code>python wordcount.py sample.txt</code></pre>
+You should see an output along the lines of:
+<pre><code>"chars" 10477
+"lines" 170
+"words" 1619
 </code></pre>
+## Analyzing Sentiment with MapReduce
+Open a new python document and name it ```sentiments.py```
+
+Follow live demo
